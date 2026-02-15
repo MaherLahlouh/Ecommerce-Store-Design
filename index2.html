@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TechSpec | High Performance Laptops</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#197fe6",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#111921",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .spec-badge {
+            @apply flex items-center gap-1 bg-primary/10 text-primary px-2 py-1 rounded text-[10px] font-semibold uppercase tracking-wider;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 w-full bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800">
+<div class="max-w-[1440px] mx-auto px-4 h-16 flex items-center justify-between gap-8">
+<!-- Logo -->
+<div class="flex items-center gap-2 cursor-pointer">
+<div class="bg-primary p-1.5 rounded-lg text-white">
+<span class="material-symbols-outlined block">devices</span>
+</div>
+<h1 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">TechSpec</h1>
+</div>
+<!-- Search Bar -->
+<div class="flex-1 max-w-2xl relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">search</span>
+<input class="w-full bg-slate-100 dark:bg-slate-800 border-none rounded-lg py-2 pl-10 pr-4 focus:ring-2 focus:ring-primary text-sm" placeholder="Search laptops, specs, or brands..." type="text"/>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-4">
+<button class="p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors relative">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="absolute top-1 right-1 bg-primary text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center">2</span>
+</button>
+<div class="h-8 w-px bg-slate-200 dark:bg-slate-800"></div>
+<div class="flex items-center gap-2 cursor-pointer p-1 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+<div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary overflow-hidden">
+<span class="material-symbols-outlined">person</span>
+</div>
+<span class="text-sm font-medium hidden md:block">Alex Dev</span>
+</div>
+</div>
+</div>
+</header>
+<main class="max-w-[1440px] mx-auto px-4 py-6">
+<!-- Breadcrumbs & Title -->
+<div class="mb-6">
+<nav class="flex items-center gap-2 text-xs text-slate-500 mb-2">
+<a class="hover:text-primary" href="#">Home</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-primary" href="#">Computers</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-slate-900 dark:text-slate-300 font-medium">High Performance Laptops</span>
+</nav>
+<div class="flex items-end justify-between">
+<div>
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white">High Performance Laptops</h2>
+<p class="text-sm text-slate-500">124 specialized machines found for power users</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg px-3 py-1.5 text-sm">
+<span class="text-slate-500">Sort by:</span>
+<select class="bg-transparent border-none p-0 focus:ring-0 font-semibold cursor-pointer">
+<option>Popularity</option>
+<option>Price: Low to High</option>
+<option>Price: High to Low</option>
+<option>Newest Arrivals</option>
+<option>Top Rated</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+<div class="flex gap-8">
+<!-- Filter Sidebar -->
+<aside class="w-64 shrink-0 hidden lg:block">
+<div class="sticky top-24 flex flex-col gap-6">
+<div class="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 pb-3">
+<span class="font-bold text-sm uppercase tracking-wider">Filters</span>
+<button class="text-primary text-xs font-semibold hover:underline">Reset All</button>
+</div>
+<!-- Filter Groups -->
+<div class="space-y-6">
+<!-- Brand -->
+<div>
+<h4 class="font-semibold text-sm mb-3 flex items-center justify-between">Brand <span class="material-symbols-outlined text-sm">expand_more</span></h4>
+<div class="space-y-2">
+<label class="flex items-center gap-2 text-sm cursor-pointer group">
+<input checked="" class="rounded border-slate-300 text-primary focus:ring-primary w-4 h-4" type="checkbox"/>
+<span class="group-hover:text-primary transition-colors">Apple</span>
+<span class="text-slate-400 text-xs ml-auto">(24)</span>
+</label>
+<label class="flex items-center gap-2 text-sm cursor-pointer group">
+<input class="rounded border-slate-300 text-primary focus:ring-primary w-4 h-4" type="checkbox"/>
+<span class="group-hover:text-primary transition-colors">ASUS ROG</span>
+<span class="text-slate-400 text-xs ml-auto">(42)</span>
+</label>
+<label class="flex items-center gap-2 text-sm cursor-pointer group">
+<input class="rounded border-slate-300 text-primary focus:ring-primary w-4 h-4" type="checkbox"/>
+<span class="group-hover:text-primary transition-colors">Razer</span>
+<span class="text-slate-400 text-xs ml-auto">(18)</span>
+</label>
+<label class="flex items-center gap-2 text-sm cursor-pointer group">
+<input class="rounded border-slate-300 text-primary focus:ring-primary w-4 h-4" type="checkbox"/>
+<span class="group-hover:text-primary transition-colors">Dell XPS</span>
+<span class="text-slate-400 text-xs ml-auto">(12)</span>
+</label>
+</div>
+</div>
+<!-- Price Range -->
+<div>
+<h4 class="font-semibold text-sm mb-3">Price Range</h4>
+<div class="px-2">
+<input class="w-full accent-primary" max="5000" min="500" type="range" value="2500"/>
+<div class="flex justify-between mt-2 text-xs text-slate-500">
+<span>$500</span>
+<span>$5,000+</span>
+</div>
+</div>
+</div>
+<!-- CPU Type -->
+<div>
+<h4 class="font-semibold text-sm mb-3 flex items-center justify-between">CPU <span class="material-symbols-outlined text-sm">expand_more</span></h4>
+<div class="grid grid-cols-2 gap-2">
+<button class="px-2 py-1.5 border border-primary bg-primary/5 text-primary text-xs font-semibold rounded">Core i9</button>
+<button class="px-2 py-1.5 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 text-xs font-semibold rounded hover:border-primary">Core i7</button>
+<button class="px-2 py-1.5 border border-primary bg-primary/5 text-primary text-xs font-semibold rounded">Apple M3 Max</button>
+<button class="px-2 py-1.5 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 text-xs font-semibold rounded hover:border-primary">Ryzen 9</button>
+</div>
+</div>
+<!-- RAM Size -->
+<div>
+<h4 class="font-semibold text-sm mb-3">RAM Capacity</h4>
+<div class="space-y-2">
+<label class="flex items-center gap-2 text-sm cursor-pointer group">
+<input class="text-primary focus:ring-primary w-4 h-4 border-slate-300" name="ram" type="radio"/>
+<span>16GB</span>
+</label>
+<label class="flex items-center gap-2 text-sm cursor-pointer group">
+<input checked="" class="text-primary focus:ring-primary w-4 h-4 border-slate-300" name="ram" type="radio"/>
+<span>32GB or more</span>
+</label>
+<label class="flex items-center gap-2 text-sm cursor-pointer group">
+<input class="text-primary focus:ring-primary w-4 h-4 border-slate-300" name="ram" type="radio"/>
+<span>64GB+</span>
+</label>
+</div>
+</div>
+<!-- GPU Model -->
+<div>
+<h4 class="font-semibold text-sm mb-3 flex items-center justify-between">GPU <span class="material-symbols-outlined text-sm">expand_more</span></h4>
+<div class="space-y-2">
+<label class="flex items-center gap-2 text-sm cursor-pointer group">
+<input class="rounded border-slate-300 text-primary focus:ring-primary w-4 h-4" type="checkbox"/>
+<span>RTX 4090</span>
+</label>
+<label class="flex items-center gap-2 text-sm cursor-pointer group">
+<input checked="" class="rounded border-slate-300 text-primary focus:ring-primary w-4 h-4" type="checkbox"/>
+<span>RTX 4080</span>
+</label>
+</div>
+</div>
+</div>
+<!-- Help Card -->
+<div class="mt-4 p-4 rounded-xl bg-slate-900 text-white relative overflow-hidden">
+<div class="relative z-10">
+<p class="text-[10px] font-bold text-primary mb-1 uppercase tracking-widest">Expert Help</p>
+<p class="text-xs font-medium leading-relaxed mb-3">Need help choosing the right specs for your workflow?</p>
+<button class="w-full py-2 bg-primary hover:bg-primary/90 rounded text-xs font-bold transition-colors">Chat with Specialist</button>
+</div>
+<span class="material-symbols-outlined absolute -bottom-4 -right-4 text-white/10 text-8xl rotate-12">support_agent</span>
+</div>
+</div>
+</aside>
+<!-- Product Grid -->
+<div class="flex-1">
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+<!-- Laptop Card 1 -->
+<div class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden hover:shadow-xl transition-all group">
+<div class="relative h-56 bg-slate-50 dark:bg-slate-800 p-6 flex items-center justify-center">
+<img alt="High performance gaming laptop side view" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300" data-alt="High performance gaming laptop side view" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8-dgtaoRv1pNwWSx5olgoH-KJkxSA91tidoEOdUlRhDdILnY6EcHhDP-JW-Ed3ae37g2ThWXEFfXDfC6bC2F-qQcuaOglVxDraG9gR-HaEzwWqxhIkDS5UC57DvqY6aowuRqBsf9OsZFa_DK_H-ymMnWPjCNOQKExpp9kcZWRulq9JdmbhDpoXwzlzhZVwQHpC0gZ5VKKlZiTOFr4_pZMprdHodb1TgZzv71WLLnsdLT_1svsW-aidp3qzTvW2mRYkYrFu_PIHLYw"/>
+<span class="absolute top-3 left-3 bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">HOT DEAL</span>
+<button class="absolute top-3 right-3 p-1.5 bg-white/80 dark:bg-slate-900/80 rounded-full hover:text-red-500 transition-colors">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+</div>
+<div class="p-5">
+<div class="flex items-center gap-2 mb-2">
+<div class="flex text-yellow-400">
+<span class="material-symbols-outlined text-[16px] fill-current">star</span>
+<span class="material-symbols-outlined text-[16px] fill-current">star</span>
+<span class="material-symbols-outlined text-[16px] fill-current">star</span>
+<span class="material-symbols-outlined text-[16px] fill-current">star</span>
+<span class="material-symbols-outlined text-[16px] fill-current">star</span>
+</div>
+<span class="text-xs text-slate-400 font-medium">(84 Reviews)</span>
+</div>
+<h3 class="font-bold text-slate-900 dark:text-white mb-2 leading-tight group-hover:text-primary transition-colors">ASUS ROG Strix SCAR 18 (2024)</h3>
+<div class="flex flex-wrap gap-2 mb-4">
+<div class="flex items-center gap-1.5 text-[11px] font-medium text-slate-500 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[14px]">memory</span> Core i9-14900HX
+                                </div>
+<div class="flex items-center gap-1.5 text-[11px] font-medium text-slate-500 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[14px]">videogame_asset</span> RTX 4090
+                                </div>
+<div class="flex items-center gap-1.5 text-[11px] font-medium text-slate-500 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[14px]">sd_card</span> 32GB RAM
+                                </div>
+<div class="flex items-center gap-1.5 text-[11px] font-medium text-slate-500 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[14px]">monitor</span> 18" QHD+ 240Hz
+                                </div>
+</div>
+<div class="flex items-center justify-between border-t border-slate-100 dark:border-slate-800 pt-4 mt-auto">
+<div>
+<span class="text-sm text-slate-400 line-through font-medium">$3,899</span>
+<div class="text-xl font-bold text-slate-900 dark:text-white">$3,499.00</div>
+</div>
+<div class="flex items-center gap-3">
+<label class="flex items-center gap-1 cursor-pointer" title="Add to compare">
+<input class="rounded text-primary focus:ring-primary w-4 h-4 border-slate-300" type="checkbox"/>
+<span class="text-[10px] font-bold text-slate-400 uppercase">Compare</span>
+</label>
+<button class="bg-primary text-white p-2 rounded-lg hover:shadow-lg hover:shadow-primary/30 transition-all">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Laptop Card 2 -->
+<div class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden hover:shadow-xl transition-all group">
+<div class="relative h-56 bg-slate-50 dark:bg-slate-800 p-6 flex items-center justify-center">
+<img alt="Sleek premium silver laptop open" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300" data-alt="Sleek premium silver laptop open" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAX0ct7yBBP24YtfktFiBtCmj4i1QyoW00aVFWkp0rzGr50lH-zaDl1NX4V1AGz3xm1CaKBlXbD_KHFse_w7HWJOazWTbhHYzL6tK976FUQm6fj_0lW7n-8KpdFzjXdQ8O-ixusF6byT7rGsMPxZKRip7FG5ihHAE0PVkV0nGI3cWoMMN25pKMxpFNcGRIF70qoj5b6w0s9kpiFI_Gs7xlJkP78-55ogU-l45Qc7MgOBrLSegKcifF8eDXDOwkpyCCz-cfpdXzOv-E4"/>
+<button class="absolute top-3 right-3 p-1.5 bg-white/80 dark:bg-slate-900/80 rounded-full hover:text-red-500 transition-colors">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+</div>
+<div class="p-5">
+<div class="flex items-center gap-2 mb-2">
+<div class="flex text-yellow-400">
+<span class="material-symbols-outlined text-[16px] fill-current">star</span>
+<span class="material-symbols-outlined text-[16px] fill-current">star</span>
+<span class="material-symbols-outlined text-[16px] fill-current">star</span>
+<span class="material-symbols-outlined text-[16px] fill-current">star</span>
+<span class="material-symbols-outlined text-[16px] fill-current text-slate-300">star</span>
+</div>
+<span class="text-xs text-slate-400 font-medium">(112 Reviews)</span>
+</div>
+<h3 class="font-bold text-slate-900 dark:text-white mb-2 leading-tight group-hover:text-primary transition-colors">MacBook Pro 16-inch M3 Max</h3>
+<div class="flex flex-wrap gap-2 mb-4">
+<div class="flex items-center gap-1.5 text-[11px] font-medium text-slate-500 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[14px]">chip_extraction</span> Apple M3 Max
+                                </div>
+<div class="flex items-center gap-1.5 text-[11px] font-medium text-slate-500 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[14px]">sd_card</span> 48GB RAM
+                                </div>
+<div class="flex items-center gap-1.5 text-[11px] font-medium text-slate-500 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[14px]">database</span> 1TB SSD
+                                </div>
+<div class="flex items-center gap-1.5 text-[11px] font-medium text-slate-500 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[14px]">monitor</span> Liquid Retina XDR
+                                </div>
+</div>
+<div class="flex items-center justify-between border-t border-slate-100 dark:border-slate-800 pt-4 mt-auto">
+<div>
+<div class="text-xl font-bold text-slate-900 dark:text-white">$3,999.00</div>
+<span class="text-[10px] text-green-600 font-bold uppercase">In Stock</span>
+</div>
+<div class="flex items-center gap-3">
+<label class="flex items-center gap-1 cursor-pointer">
+<input class="rounded text-primary focus:ring-primary w-4 h-4 border-slate-300" type="checkbox"/>
+<span class="text-[10px] font-bold text-slate-400 uppercase">Compare</span>
+</label>
+<button class="bg-primary text-white p-2 rounded-lg hover:shadow-lg hover:shadow-primary/30 transition-all">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Laptop Card 3 -->
+<div class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden hover:shadow-xl transition-all group">
+<div class="relative h-56 bg-slate-50 dark:bg-slate-800 p-6 flex items-center justify-center">
+<img alt="Thin professional laptop with carbon finish" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300" data-alt="Thin professional laptop with carbon finish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwosLnFUKIBDim3yh1bXlbnEIhw6zjlJXjDodrRVdzo_DbzkxM8rgWT4-N_wxLIBphdRKO_xRONzXL3mF6b4wBwdIyMhUOayfyoOUxmlkXtk1fBMGHpUlYiFew02UA-iYyfJRrmRE6YUfg-BQ2PbDXskZyEvYlgjGtDD5mfCg0ZnhiMVu28Hu6dlXJUnaoyw5Hbhliv16nVNFN4wmWcottEMnfTqXeA5n_deRYgHcgE4T5tqfy8p4XbKOstGwZ3S8TU_vg4WWmBW73"/>
+<span class="absolute top-3 left-3 bg-primary text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">New Arrival</span>
+<button class="absolute top-3 right-3 p-1.5 bg-white/80 dark:bg-slate-900/80 rounded-full hover:text-red-500 transition-colors">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+</div>
+<div class="p-5">
+<div class="flex items-center gap-2 mb-2">
+<div class="flex text-yellow-400">
+<span class="material-symbols-outlined text-[16px] fill-current">star</span>
+<span class="material-symbols-outlined text-[16px] fill-current">star</span>
+<span class="material-symbols-outlined text-[16px] fill-current">star</span>
+<span class="material-symbols-outlined text-[16px] fill-current text-slate-300">star</span>
+<span class="material-symbols-outlined text-[16px] fill-current text-slate-300">star</span>
+</div>
+<span class="text-xs text-slate-400 font-medium">(32 Reviews)</span>
+</div>
+<h3 class="font-bold text-slate-900 dark:text-white mb-2 leading-tight group-hover:text-primary transition-colors">Razer Blade 14 QHD+ 240Hz</h3>
+<div class="flex flex-wrap gap-2 mb-4">
+<div class="flex items-center gap-1.5 text-[11px] font-medium text-slate-500 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[14px]">memory</span> Ryzen 9 8945HS
+                                </div>
+<div class="flex items-center gap-1.5 text-[11px] font-medium text-slate-500 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[14px]">videogame_asset</span> RTX 4070
+                                </div>
+<div class="flex items-center gap-1.5 text-[11px] font-medium text-slate-500 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[14px]">sd_card</span> 16GB RAM
+                                </div>
+</div>
+<div class="flex items-center justify-between border-t border-slate-100 dark:border-slate-800 pt-4 mt-auto">
+<div>
+<div class="text-xl font-bold text-slate-900 dark:text-white">$2,699.99</div>
+<span class="text-[10px] text-orange-500 font-bold uppercase">Ships in 2 days</span>
+</div>
+<div class="flex items-center gap-3">
+<label class="flex items-center gap-1 cursor-pointer">
+<input class="rounded text-primary focus:ring-primary w-4 h-4 border-slate-300" type="checkbox"/>
+<span class="text-[10px] font-bold text-slate-400 uppercase">Compare</span>
+</label>
+<button class="bg-primary text-white p-2 rounded-lg hover:shadow-lg hover:shadow-primary/30 transition-all">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Laptop Card 4 -->
+<div class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden hover:shadow-xl transition-all group">
+<div class="relative h-56 bg-slate-50 dark:bg-slate-800 p-6 flex items-center justify-center">
+<img alt="Large workstation laptop open" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300" data-alt="Large workstation laptop open" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfuqc1J8JRCN-k9g32xawWuoSDlKIegVfXwIccPPgWA9WtdasbzBjgPWoITkgT9jApLRX5AU1_cerBKm5FZJl2o9zLTGBj_RHIfU_Iy4W_1X-XSFqeZBPSC6o8tVm4R9uwgArYWfsMHTzQkrE3aYUhqwVzSentvIDP-68q_jkL0OrfishFnuGSpta0oYAhjGdOW5tJtbwFnYsTUuMIdVXNz-cy37JclbgqAA-85RZvKkqJrwzRnMILHkgd70x4MjxhRB8ZujO8IBdC"/>
+<button class="absolute top-3 right-3 p-1.5 bg-white/80 dark:bg-slate-900/80 rounded-full hover:text-red-500 transition-colors">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+</div>
+<div class="p-5">
+<div class="flex items-center gap-2 mb-2">
+<div class="flex text-yellow-400">
+<span class="material-symbols-outlined text-[16px] fill-current">star</span>
+<span class="material-symbols-outlined text-[16px] fill-current">star</span>
+<span class="material-symbols-outlined text-[16px] fill-current">star</span>
+<span class="material-symbols-outlined text-[16px] fill-current">star</span>
+<span class="material-symbols-outlined text-[16px] fill-current">star</span>
+</div>
+<span class="text-xs text-slate-400 font-medium">(256 Reviews)</span>
+</div>
+<h3 class="font-bold text-slate-900 dark:text-white mb-2 leading-tight group-hover:text-primary transition-colors">Dell XPS 17 Workstation</h3>
+<div class="flex flex-wrap gap-2 mb-4">
+<div class="flex items-center gap-1.5 text-[11px] font-medium text-slate-500 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[14px]">memory</span> Core i7-13700H
+                                </div>
+<div class="flex items-center gap-1.5 text-[11px] font-medium text-slate-500 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[14px]">sd_card</span> 32GB DDR5
+                                </div>
+<div class="flex items-center gap-1.5 text-[11px] font-medium text-slate-500 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[14px]">monitor</span> 17" 4K+ Touch
+                                </div>
+</div>
+<div class="flex items-center justify-between border-t border-slate-100 dark:border-slate-800 pt-4 mt-auto">
+<div>
+<div class="text-xl font-bold text-slate-900 dark:text-white">$2,149.00</div>
+<span class="text-[10px] text-green-600 font-bold uppercase">In Stock</span>
+</div>
+<div class="flex items-center gap-3">
+<label class="flex items-center gap-1 cursor-pointer">
+<input class="rounded text-primary focus:ring-primary w-4 h-4 border-slate-300" type="checkbox"/>
+<span class="text-[10px] font-bold text-slate-400 uppercase">Compare</span>
+</label>
+<button class="bg-primary text-white p-2 rounded-lg hover:shadow-lg hover:shadow-primary/30 transition-all">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Laptop Card 5 -->
+<div class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden hover:shadow-xl transition-all group">
+<div class="relative h-56 bg-slate-50 dark:bg-slate-800 p-6 flex items-center justify-center">
+<img alt="Alien looking gaming laptop" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300" data-alt="Alien looking gaming laptop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKo5fZzVtBRK6Q-nV4wV-ZSXqnvVm6cowJDnJ5-rGEQp3Y8RUU0w0DNQVUotZdWHC9E15GFWQIrxNUeqxtWc8Q58nKsK5Lj0fhDB8rch3ci2CjDyJp36781FZ98CPE6x_j0FyRiEPpWqPjTLLCUxDp53mNtd7mkzc4-xqLzup_JChZoy7ckUBrGBY5q2mfLNwOKT_A6iscECVhG046VIfrTqzvkDjLe04bU0xBwOd3oIsld35ki2jg5m5AjyCLl4hikswfOjcC90LU"/>
+<button class="absolute top-3 right-3 p-1.5 bg-white/80 dark:bg-slate-900/80 rounded-full hover:text-red-500 transition-colors">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+</div>
+<div class="p-5">
+<div class="flex items-center gap-2 mb-2">
+<div class="flex text-yellow-400">
+<span class="material-symbols-outlined text-[16px] fill-current">star</span>
+<span class="material-symbols-outlined text-[16px] fill-current">star</span>
+<span class="material-symbols-outlined text-[16px] fill-current">star</span>
+<span class="material-symbols-outlined text-[16px] fill-current">star</span>
+<span class="material-symbols-outlined text-[16px] text-slate-300">star_half</span>
+</div>
+<span class="text-xs text-slate-400 font-medium">(42 Reviews)</span>
+</div>
+<h3 class="font-bold text-slate-900 dark:text-white mb-2 leading-tight group-hover:text-primary transition-colors">Alienware m18 R2 Gaming</h3>
+<div class="flex flex-wrap gap-2 mb-4">
+<div class="flex items-center gap-1.5 text-[11px] font-medium text-slate-500 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[14px]">memory</span> Core i9-14900HX
+                                </div>
+<div class="flex items-center gap-1.5 text-[11px] font-medium text-slate-500 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[14px]">videogame_asset</span> RTX 4080
+                                </div>
+<div class="flex items-center gap-1.5 text-[11px] font-medium text-slate-500 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[14px]">sd_card</span> 64GB RAM
+                                </div>
+</div>
+<div class="flex items-center justify-between border-t border-slate-100 dark:border-slate-800 pt-4 mt-auto">
+<div>
+<div class="text-xl font-bold text-slate-900 dark:text-white">$3,199.00</div>
+<span class="text-[10px] text-slate-400 font-bold uppercase">Pre-Order Now</span>
+</div>
+<div class="flex items-center gap-3">
+<label class="flex items-center gap-1 cursor-pointer">
+<input class="rounded text-primary focus:ring-primary w-4 h-4 border-slate-300" type="checkbox"/>
+<span class="text-[10px] font-bold text-slate-400 uppercase">Compare</span>
+</label>
+<button class="bg-primary text-white p-2 rounded-lg hover:shadow-lg hover:shadow-primary/30 transition-all">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Laptop Card 6 -->
+<div class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden hover:shadow-xl transition-all group">
+<div class="relative h-56 bg-slate-50 dark:bg-slate-800 p-6 flex items-center justify-center">
+<img alt="Rugged looking professional laptop" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300" data-alt="Rugged looking professional laptop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoMvNVDSdvRL8rcjn2SCX_hsWkAkdRK2BXP6kSYNKumveQbAl8rkkXuouC0iVrlz9R8g-qZG3lgB_6OGfMKbruuVazkYrymw0QzAorIyF0RIh9qKf2MMAgNzLSfOs6LZthW2xGEkeE0xFueh-AaS6Al8VjP7vk71WHXjWol-iuRpjuaOSAPAuAgdZ-0z-IXeRPy44JVVArVZ5f-xzvqSID8g7KF6wKgQMBHeYufUCr-g50DmXA7hyV0mRNEygZkJl4kuuba4nkjbIt"/>
+<button class="absolute top-3 right-3 p-1.5 bg-white/80 dark:bg-slate-900/80 rounded-full hover:text-red-500 transition-colors">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+</div>
+<div class="p-5">
+<div class="flex items-center gap-2 mb-2">
+<div class="flex text-yellow-400">
+<span class="material-symbols-outlined text-[16px] fill-current">star</span>
+<span class="material-symbols-outlined text-[16px] fill-current">star</span>
+<span class="material-symbols-outlined text-[16px] fill-current">star</span>
+<span class="material-symbols-outlined text-[16px] fill-current">star</span>
+<span class="material-symbols-outlined text-[16px] text-slate-300">star</span>
+</div>
+<span class="text-xs text-slate-400 font-medium">(18 Reviews)</span>
+</div>
+<h3 class="font-bold text-slate-900 dark:text-white mb-2 leading-tight group-hover:text-primary transition-colors">Lenovo Legion Pro 7i Gen 8</h3>
+<div class="flex flex-wrap gap-2 mb-4">
+<div class="flex items-center gap-1.5 text-[11px] font-medium text-slate-500 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[14px]">memory</span> Core i9-13900HX
+                                </div>
+<div class="flex items-center gap-1.5 text-[11px] font-medium text-slate-500 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[14px]">videogame_asset</span> RTX 4080
+                                </div>
+<div class="flex items-center gap-1.5 text-[11px] font-medium text-slate-500 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[14px]">sd_card</span> 32GB RAM
+                                </div>
+</div>
+<div class="flex items-center justify-between border-t border-slate-100 dark:border-slate-800 pt-4 mt-auto">
+<div>
+<div class="text-xl font-bold text-slate-900 dark:text-white">$2,449.00</div>
+<span class="text-[10px] text-green-600 font-bold uppercase">In Stock</span>
+</div>
+<div class="flex items-center gap-3">
+<label class="flex items-center gap-1 cursor-pointer">
+<input class="rounded text-primary focus:ring-primary w-4 h-4 border-slate-300" type="checkbox"/>
+<span class="text-[10px] font-bold text-slate-400 uppercase">Compare</span>
+</label>
+<button class="bg-primary text-white p-2 rounded-lg hover:shadow-lg hover:shadow-primary/30 transition-all">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="mt-12 flex items-center justify-center gap-2">
+<button class="p-2 border border-slate-200 dark:border-slate-800 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary text-white font-bold">1</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">2</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">3</button>
+<span class="px-2 text-slate-400">...</span>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">12</button>
+<button class="p-2 border border-slate-200 dark:border-slate-800 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Floating Compare Bar (Mockup - hidden by default, visible when 2+ items selected) -->
+<div class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-white dark:bg-slate-900 shadow-2xl rounded-2xl border border-slate-200 dark:border-slate-800 px-6 py-4 flex items-center gap-8 z-[60] animate-bounce-in">
+<div class="flex items-center gap-4">
+<div class="relative">
+<div class="w-12 h-12 bg-slate-100 dark:bg-slate-800 rounded-lg overflow-hidden border border-primary p-1">
+<img alt="Product thumbnail for comparison 1" class="w-full h-full object-contain" data-alt="Product thumbnail for comparison 1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdZirWKcf2-oEYox27G09-9nAnvouK1TNrDnrehdHxCJusXrYvHKX1EcUuVOaPP8hC3VYhsScGeuQQuDaE9mRKFP7oeFbb25WR_rr9rj3aTkSAlW3lv9_H2AglfSqkUfNQW3T9Wv1cdD7UDqsuzzRACsyRcfs7LroGTKSzJuURzB9zgDMkIpGIaTstgV-bfbEL4xNnbDRoa7knJs7A_ULKKF91xZ2ddPx-3y7CxmaJsLtb5qGiNF_y3MDNInxefIkjbRajqJ9VU6UO"/>
+</div>
+<button class="absolute -top-2 -right-2 bg-slate-900 text-white rounded-full w-4 h-4 flex items-center justify-center text-[10px]">
+<span class="material-symbols-outlined text-[12px]">close</span>
+</button>
+</div>
+<div class="relative">
+<div class="w-12 h-12 bg-slate-100 dark:bg-slate-800 rounded-lg overflow-hidden border border-primary p-1">
+<img alt="Product thumbnail for comparison 2" class="w-full h-full object-contain" data-alt="Product thumbnail for comparison 2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfLghTYIVm9bdcdF_tScAgyxGRhUgQpOtlBO4X_VRA8ZU_wbXQH4PFvsKGmaxWtz8hFEMZpO6mTQfIQ2zuk7djLokyi2OwsZZHYguco6ZhFB829jclkwXtT3EYfE0zTyGJ1e7pkEE78BrresGitsvtJwWPCihiChBVSRxX6k1JQJxHhgt4YJWS3BGYT5g2NPTct0_Fj1I_kEB-NSVEtbb3ueg-lBXpIvQPCCpvs7BC7w7vj0Nwqww3k915Y8xEUCM0hzE19fYF1lz9"/>
+</div>
+<button class="absolute -top-2 -right-2 bg-slate-900 text-white rounded-full w-4 h-4 flex items-center justify-center text-[10px]">
+<span class="material-symbols-outlined text-[12px]">close</span>
+</button>
+</div>
+<div class="w-12 h-12 border-2 border-dashed border-slate-200 dark:border-slate-700 rounded-lg flex items-center justify-center text-slate-300">
+<span class="material-symbols-outlined">add</span>
+</div>
+</div>
+<div class="h-8 w-px bg-slate-200 dark:bg-slate-800"></div>
+<div class="flex items-center gap-4">
+<div class="text-sm font-medium">2 Products Selected</div>
+<button class="bg-primary text-white px-6 py-2.5 rounded-lg font-bold text-sm hover:shadow-lg hover:shadow-primary/30 transition-all flex items-center gap-2">
+                Compare Now <span class="material-symbols-outlined text-sm">compare_arrows</span>
+</button>
+</div>
+</div>
+<!-- Footer -->
+<footer class="mt-20 border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 py-12">
+<div class="max-w-[1440px] mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 mb-4">
+<div class="bg-primary p-1.5 rounded-lg text-white">
+<span class="material-symbols-outlined block">devices</span>
+</div>
+<h1 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">TechSpec</h1>
+</div>
+<p class="text-sm text-slate-500 leading-relaxed">The ultimate destination for professional hardware enthusiasts and performance seekers. Specs-first shopping experience.</p>
+</div>
+<div>
+<h5 class="font-bold text-sm mb-4 uppercase tracking-wider">Quick Links</h5>
+<ul class="space-y-2 text-sm text-slate-500">
+<li><a class="hover:text-primary transition-colors" href="#">Compare Laptops</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">New Arrivals</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Refurbished Units</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Business Accounts</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-sm mb-4 uppercase tracking-wider">Support</h5>
+<ul class="space-y-2 text-sm text-slate-500">
+<li><a class="hover:text-primary transition-colors" href="#">Help Center</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Order Tracking</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Shipping Policy</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Returns &amp; Refunds</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-sm mb-4 uppercase tracking-wider">Newsletter</h5>
+<p class="text-xs text-slate-500 mb-3">Get the latest benchmarks and spec drops.</p>
+<div class="flex gap-2">
+<input class="flex-1 bg-slate-100 dark:bg-slate-800 border-none rounded text-xs focus:ring-1 focus:ring-primary" placeholder="Email" type="email"/>
+<button class="bg-primary text-white px-3 py-2 rounded text-xs font-bold uppercase tracking-tight">Join</button>
+</div>
+</div>
+</div>
+<div class="max-w-[1440px] mx-auto px-4 mt-12 pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-400 font-medium">
+<p>© 2024 TechSpec Hardware. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-primary" href="#">Privacy Policy</a>
+<a class="hover:text-primary" href="#">Terms of Service</a>
+<a class="hover:text-primary" href="#">Cookie Settings</a>
+</div>
+</div>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Price Range Slider
+        const priceRange = document.querySelector('input[type="range"]');
+        const priceHeader = Array.from(document.querySelectorAll('h4')).find(h => h.textContent.includes('Price Range'));
+        
+        if (priceRange && priceHeader) {
+            const updatePriceLabel = () => {
+                priceHeader.innerHTML = `Price Range: <span class="text-primary">$${parseInt(priceRange.value).toLocaleString()}</span>`;
+            };
+            priceRange.addEventListener('input', updatePriceLabel);
+            updatePriceLabel(); // Initialize
+        }
+
+        // Filter Accordions (Expand/Collapse)
+        const filterHeaders = document.querySelectorAll('aside h4');
+        filterHeaders.forEach(header => {
+            const icon = header.querySelector('.material-symbols-outlined');
+            if (icon && icon.textContent === 'expand_more') {
+                header.style.cursor = 'pointer';
+                header.addEventListener('click', () => {
+                    const content = header.nextElementSibling;
+                    content.classList.toggle('hidden');
+                    icon.style.transform = content.classList.contains('hidden') ? 'rotate(-90deg)' : 'rotate(0deg)';
+                    icon.style.transition = 'transform 0.2s';
+                });
+            }
+        });
+
+        // Compare Bar Logic
+        const compareBar = document.querySelector('.fixed.bottom-6');
+        if (compareBar) compareBar.classList.add('hidden'); // Hide initially
+
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        const compareCheckboxes = Array.from(checkboxes).filter(cb => 
+            cb.parentElement.textContent.trim().toLowerCase().includes('compare')
+        );
+
+        const updateCompareBar = () => {
+            const selected = compareCheckboxes.filter(cb => cb.checked);
+            
+            if (selected.length >= 2) {
+                compareBar.classList.remove('hidden');
+                compareBar.classList.add('flex');
+                
+                // Update count text
+                const countText = compareBar.querySelector('.text-sm.font-medium');
+                if(countText) countText.textContent = `${selected.length} Products Selected`;
+
+                // Update thumbnails (Grab image from the card)
+                const thumbs = compareBar.querySelectorAll('.w-12.h-12 img');
+                selected.forEach((cb, index) => {
+                    if (index < thumbs.length) {
+                        const card = cb.closest('.group');
+                        const img = card.querySelector('img');
+                        if (img) thumbs[index].src = img.src;
+                    }
+                });
+            } else {
+                compareBar.classList.add('hidden');
+                compareBar.classList.remove('flex');
+            }
+        };
+
+        compareCheckboxes.forEach(cb => {
+            cb.addEventListener('change', updateCompareBar);
+        });
+        
+        // Close buttons on compare bar thumbnails
+        const closeBtns = compareBar.querySelectorAll('button.absolute');
+        closeBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                compareBar.classList.add('hidden');
+                compareBar.classList.remove('flex');
+                compareCheckboxes.forEach(cb => cb.checked = false);
+            });
+        });
+    });
+</script>
+</body></html>
